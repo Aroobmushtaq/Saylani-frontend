@@ -1,0 +1,122 @@
+/* General Container Styles */
+.teacher-settings-container {
+    /* padding: 50px; */
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 150px; /* Offset for the fixed sidebar */
+    max-width: 1000px; /* Medium width for the container */
+    background-color: #CDEB93;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    height: auto; /* Set height to auto for a smaller container */
+    position: absolute;
+    top: 50%; /* Position container in the center of the page */
+    left: 50%; /* Position container in the center of the page */
+    transform: translate(-50%, -50%); /* Use transform to center */
+  }
+  .teacher-profile {
+    display: flex;
+    align-items: center;
+  }
+  .teacher-profile .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* margin-right: 10px; */
+  }
+  .teacher-profile .teacher-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    margin-left: 60px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+  
+  .teacher-settings-container h3 {
+    color: #0030B3;
+    font-weight: 700;
+  }
+  
+  /* Form Styles */
+  .teacher-settings-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* Medium size for the form */
+  }
+  
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px; /* Space between form fields */
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .form-group input:disabled {
+    background-color: #f0f0f0;
+  }
+  
+  button {
+    background-color: #99CA3C;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #88B635;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  /* Profile Image Styling */
+  .profile-image {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .teacher-settings-container {
+      margin-left: 180px; /* Adjust for smaller sidebar width */
+      max-width: calc(100% - 200px);
+    }
+  
+    .teacher-settings-form {
+      width: 90%;
+    }
+  }
+  

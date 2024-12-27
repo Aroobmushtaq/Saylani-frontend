@@ -1,0 +1,157 @@
+/* General Container Styles */
+.create-course-container {
+  padding: 70px;
+  margin-left: 220px; /* Offset for the fixed sidebar */
+  max-width: 1000px; /* Medium width for the container */
+  background-color: #CDEB93;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center content horizontally */
+  height: auto; /* Set height to auto for a smaller container */
+  position: absolute;
+  top: 50%; /* Position container in the center of the page */
+  left: 50%; /* Position container in the center of the page */
+  transform: translate(-50%, -50%); /* Use transform to center */
+}
+
+/* Heading Styling */
+.create-course-container h3 {
+  color: #0030B3;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Fix the navbar to the left side of the screen */
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full height */
+  width: 220px; /* Sidebar width */
+  background-color: #99CA3C; /* Sidebar background */
+  padding: 20px 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for visibility */
+  z-index: 1000; /* Above content */
+}
+
+/* Navbar link styling */
+.navbar-link {
+  color: #99CA3C; /* Link text color */
+  background-color: #FFFFFF; /* Link background color */
+  font-size: 16px;
+  text-decoration: none;
+  padding: 12px 25px; /* Larger clickable area */
+  margin: 10px 0; /* Space between links */
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center; /* Center text */
+  margin-right: 25px;
+  border-radius: 5px;
+}
+
+/* Hover effect for navbar links */
+.navbar-link:hover {
+  background-color: #88B635; /* Slightly darker green */
+  color: #FFFFFF; /* White text on hover */
+}
+
+/* Content Section */
+.create-course-content {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.create-course-title {
+  font-size: 24px; /* Slightly larger font size */
+  color: #333;
+  margin-bottom: 20px; /* Slightly larger bottom margin */
+}
+
+/* Form Styles */
+.create-course-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px; /* Medium size for the form */
+}
+
+.form-input,
+.form-textarea,
+.form-file-input {
+  width: 100%;
+  margin-bottom: 15px; /* Slightly larger margin */
+  padding: 12px; /* Adequate padding for input fields */
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px; /* Balanced font size */
+}
+
+.form-textarea {
+  height: 100px; /* Adequate height for the text area */
+  resize: none;
+}
+
+.form-file-input {
+  padding: 10px; /* Adequate padding for file input */
+}
+
+.submit-button {
+  background-color: #99CA3C;
+  color: white;
+  padding: 12px 30px; /* Larger padding for button */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px; /* Balanced font size */
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #88B635;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    width: 180px; /* Adjust sidebar width for smaller screens */
+    padding: 10px;
+  }
+
+  .navbar-link {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .create-course-container {
+    margin-left: 180px; /* Adjust for smaller sidebar width */
+    max-width: calc(100% - 200px);
+  }
+
+  .create-course-container h3 {
+    font-size: 24px; /* Adjust heading size for smaller screens */
+  }
+
+  .create-course-form {
+    max-width: 100%; /* Ensure form takes up available space */
+    padding: 10px;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+  }
+}

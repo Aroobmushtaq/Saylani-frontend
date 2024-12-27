@@ -1,0 +1,127 @@
+/* Background for the landing page */
+.landing-page {
+    background-image: url('../images/1722114476578\ 1.png');  /* Set a full-screen background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out; /* Add a subtle fade-in effect */
+}
+/* Add fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Content container */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: slideIn 0.8s ease-in-out;
+}
+
+/* Add smooth slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Adjust logo section */
+.logo-container {
+    width: 300px;
+    height: 70px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    animation: scaleIn 0.8s ease-in-out;
+}
+
+/* Add scaling effect to the logo container */
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Role buttons */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    animation: buttonSlide 0.8s ease-in-out;
+}
+
+/* Add smooth slide-in for buttons */
+@keyframes buttonSlide {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.w-40 {
+    width: 10rem;
+}
+
+.h-40 {
+    height: 10rem;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    transform: scale(1.05); /* Add zoom effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content-container {
+        max-width: 90%;
+    }
+
+    .logo-container {
+        width: 250px;
+        height: 60px;
+    }
+
+    .button {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container {
+        width: 200px;
+        height: 50px;
+    }
+
+    .button {
+        width: 7rem;
+        height: 7rem;
+    }
+}
